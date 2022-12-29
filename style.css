@@ -1,0 +1,107 @@
+:root {
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-grey: hsl(217, 12%, 63%);
+  --clr-medium-grey: hsl(216, 12%, 54%);
+  --clr-dark-blue: hsl(213, 19%, 18%);
+  --clr-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  color: var(--clr-white);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-very-dark-blue);
+}
+
+main {
+  width: calc(327px - 48px);
+  height: 360px;
+  padding: 24px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  border-radius: 16px;
+}
+
+.icon-star {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: var(--clr-dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-star > img {
+  height: 16px;
+  width: 16px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+ul {
+  width: 42px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: var(--clr-dark-blue);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul:hover {
+  color: var(--clr-white);
+  background-color: var(--clr-orange);
+}
+
+button {
+  width: 100%;
+  height: 45px;
+  background-color: var(--clr-orange);
+  border: none;
+  border-radius: 22px;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+button:hover {
+  color: var(--clr-orange);
+  background-color: var(--clr-white);
+}
+
+#input-view {
+  display: block;
+}
+#result-view {
+  margin-top: 16px;
+  display: none;
+  text-align: center;
+}
+
+#result-view > div {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 168px;
+  margin: auto;
+  margin-top: 15px;
+  color: var(--clr-orange);
+  border-radius: 16px;
+  background-color: var(--clr-dark-blue);
+}
