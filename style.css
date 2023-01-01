@@ -46,24 +46,15 @@ main {
   width: 16px;
 }
 
-li {
+ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  padding-top: 16px;
+  padding-left: 0;
 }
 
-ul {
-  width: 42px;
-  height: 42px;
-  border-radius: 24px;
-  background-color: var(--clr-dark-blue);
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-ul > button {
+li > button {
   color: var(--clr-white);
   width: 42px;
   height: 42px;
@@ -76,12 +67,12 @@ ul > button {
   border: none;
 }
 
-ul > button:hover {
+li > button:hover {
   color: var(--clr-white);
   background-color: var(--clr-orange);
 }
 
-ul > button:focus {
+li > button:focus {
   background-color: var(--clr-light-grey);
 }
 
