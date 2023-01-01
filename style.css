@@ -63,12 +63,29 @@ ul {
   align-items: center;
 }
 
-ul:hover {
+ul > button {
+  color: var(--clr-white);
+  width: 42px;
+  height: 42px;
+  border-radius: 24px;
+  background-color: var(--clr-dark-blue);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+ul > button:hover {
   color: var(--clr-white);
   background-color: var(--clr-orange);
 }
 
-button {
+ul > button:focus {
+  background-color: var(--clr-light-grey);
+}
+
+#submit-btn {
   width: 100%;
   height: 45px;
   background-color: var(--clr-orange);
@@ -78,7 +95,7 @@ button {
   margin-top: 24px;
 }
 
-button:hover {
+#submit-btn:hover {
   color: var(--clr-orange);
   background-color: var(--clr-white);
 }
